@@ -2,7 +2,6 @@
   "name": "confusion",
   "version": "0.1.0",
   "private": true,
-  "proxy":"localhost:3001",
   "dependencies": {
     "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
@@ -23,7 +22,7 @@
   "scripts": {
     "start": "react-scripts start",
     "dev": "json-server --watch ss.json --host 0.0.0.0 --port 3001 & npm start",
-    "build-serve": "json-server --watch ss.json & serve -s build -l 3000",
+    "build-serve": "json-server --watch ss.json --host 0.0.0.0 --port 3001 & serve -s build -l 3000",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
