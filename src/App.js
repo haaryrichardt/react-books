@@ -15,22 +15,10 @@ class App extends Component {
   }
     
   render() {
-    const view=() =>{
-      return (<ViewBook />)}
     
 
     return (
-      <div>
-      <BrowserRouter>
-        <div className="container">
-          <Switch>
-            <Route path="/viewbook" component={view}/>
-          
-            <Redirect to="/viewbook" />
-          </Switch>
-        </div>
-      </BrowserRouter>
-      </div>
+      <ViewBook />
     )    
   }
 }
